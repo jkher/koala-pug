@@ -19,6 +19,8 @@ Build Instructions
     * package.json
 4. rename koala-pug.zip to koala-pug.koala-compiler
 
+If you don't want to build compiler yourself then just grab a one from dist directory.
+
 Installation
 ------------
 

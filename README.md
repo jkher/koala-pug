@@ -23,3 +23,11 @@ Installation
 ------------
 
 Installation is quite simple. drag-and-drop koala-pug.koala-compiler on Koala application window and wait for the success message.
+
+Credits
+-------
+
+I just created this compiler for my personal use. All credit goes to following authors for all their hardwork:
+
+1. Oklai for [koala-app](http://koala-app.com)
+2. gaberankin for [koala jade compiler](https://github.com/gaberankin/koala-jade)

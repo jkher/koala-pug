@@ -19,10 +19,10 @@
 var fs = require('fs'),
     path = require('path'),
     FileManager = global.getFileManager(),
-    Compiler = require(FileManager.appScriptDir + '/Compiler');
+    Compiler = require(FileManager.appScriptsDir + '/Compiler.js');
 
 function PugCompiler(config) {
-    compiler.call(this, config);
+    Compiler.call(this, config);
 }
 require('util').inherits(PugCompiler, Compiler);
 module.exports = PugCompiler;
@@ -45,9 +45,9 @@ PugCompiler.prototype.compile = function(file, emitter) {
 		self.throwError(message, filePath);
 	};
 
-	fs.readFile(filePath, 'utf8', function (rErr, code) {
-        if (rErr) {
-        	triggerError(rErr.message);
+	fs.readFile(filePath, 'utf8', function (readError, code) {
+        if (readError) {
+        	triggerError(readError.message);
 			return false;
         }
 
@@ -65,9 +65,9 @@ PugCompiler.prototype.compile = function(file, emitter) {
 			return false;
 		}
 
-		fs.writeFile(output, html, 'utf8', function (wErr) {
-			if (wErr) {
-				triggerError(wErr.message);
+		fs.writeFile(output, html, 'utf8', function (writeError) {
+			if (writeError) {
+				triggerError(writeError.message);
 			} else {
 				emitter.emit('done');
 				emitter.emit('always');

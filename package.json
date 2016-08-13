@@ -1,28 +1,74 @@
 {
-  "name": "koala-pug",
-  "version": "1.0.0",
+	"name": "koala-pug",
+	
+  "display": "PugCompiler",
+	
   "description": "Koala extension to compile pug (former: jade) files.",
-  "main": "pugCompiler.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jkher/koala-pug.git"
-  },
+	
   "keywords": [
-    "koala",
-    "compiler",
-    "jade",
-    "pug"
+        "koala",
+        "compiler",
+        "jade",
+        "pug"     
+    ],
+	
+  "version": "1.0.0",
+	
+  "koalaVersion": ">=2.0.0",
+	
+  "main": "pugCompiler.js",
+
+	"bugs": {
+		"url": "https://github.com/jkher/koala-pug/issues"
+	},
+	
+  "author": {
+		"name": "Jaydeep Kher",
+		"web": "https://github.com/jkher"
+	},
+	
+  "contributors": [],
+
+	"maintainers": [
+    {
+      "name": "Jaydeep Kher",
+      "project": "https://github.com/jkher/koala-pug"
+    }
   ],
-  "author": "Jaydeep Kher",
-  "license": "\tGPL-3.0",
-  "bugs": {
-    "url": "https://github.com/jkher/koala-pug/issues"
-  },
-  "homepage": "https://github.com/jkher/koala-pug#readme",
-  "devDependencies": {
-    "pug": "^2.0.0-beta5"
-  }
+
+	"dependencies": {
+		"pug": "^2.0.0-beta5"
+	},
+
+	"engines": {
+		"koala": ">=2.0.0"
+	},
+
+	"licenses": [{
+		"type": "Apache 2.0",
+		"url": "http://www.apache.org/licenses/LICENSE-2.0"
+	}],
+
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/oklai/koala.git"
+	},
+
+	"fileTypes": [{
+		"extension": "pug", 
+		"output": "html",
+		"icon": "pug.png",
+		"category": "template"
+	}],
+
+	"options": [
+		{
+			"type": "checkbox",
+			"name": "prettyHtml",
+			"display": "Format HTML with whitespace",
+			"default": false
+		}
+	],
+
+	"libraries": ["pug@2.0.0-beta5"]
 }

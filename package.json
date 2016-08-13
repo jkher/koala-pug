@@ -1,0 +1,28 @@
+{
+  "name": "koala-pug",
+  "version": "1.0.0",
+  "description": "Koala extension to compile pug (former: jade) files.",
+  "main": "pugCompiler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkher/koala-pug.git"
+  },
+  "keywords": [
+    "koala",
+    "compiler",
+    "jade",
+    "pug"
+  ],
+  "author": "Jaydeep Kher",
+  "license": "\tGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/jkher/koala-pug/issues"
+  },
+  "homepage": "https://github.com/jkher/koala-pug#readme",
+  "devDependencies": {
+    "pug": "^2.0.0-beta5"
+  }
+}

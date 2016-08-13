@@ -1,5 +1,8 @@
+
 koala-pug
 =========
+
+![koala-pug](https://github.com/jkher/koala-pug/blob/master/pug.png)
 
 A Koala compiler to compile .pug files (Former: [jade](http://jade-lang.com/)).
 
